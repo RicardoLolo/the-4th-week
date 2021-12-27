@@ -1,4 +1,4 @@
-package FileBinary;
+package BinaryFile;
 
 import java.io.*;
 import java.nio.file.Files;

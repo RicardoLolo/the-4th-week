@@ -1,4 +1,4 @@
-package FileBinaryReadAndWrite;
+package BinaryFileReadAndWrite;
 
 import java.io.*;
 import java.util.ArrayList;
