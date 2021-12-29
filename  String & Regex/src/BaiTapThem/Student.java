@@ -1,29 +1,36 @@
 package BaiTapThem;
 
-public class Student extends Human {
-    private double avgPoint;
+public class Student extends Human{
+    private double average;
 
-    public Student(String name, int age, String gender, String address, double avgPoint) {
+    public Student(String name, int age, String gender, String address) {
         super(name, age, gender, address);
-        this.avgPoint = avgPoint;
     }
 
-    public double getAvgPoint() {
-        return avgPoint;
+    public Student(String name, int age, String gender, String address, double average) {
+        super(name, age, gender, address);
+        this.average = average;
     }
 
-    public void setAvgPoint(double avgPoint) {
-        this.avgPoint = avgPoint;
+    public Student() {
+    }
+
+    public double getAverage() {
+        return average;
+    }
+
+    public void setAverage(double average) {
+        this.average = average;
     }
 
     @Override
     public String toString() {
         return "Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", gender='" + gender + '\'' +
-                ", address='" + address + '\'' +
-                ", avgPoint=" + avgPoint +
+                "name='" + super.getName() + '\'' +
+                ", age=" + super.getAge() +
+                ", gender='" + super.getGender() + '\'' +
+                ", address='" + super.getAddress() + '\'' +
+                ", average=" + average +
                 '}';
     }
 }
